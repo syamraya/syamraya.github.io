@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Coding di Platform Kami</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome untuk ikon -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -25,7 +25,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!--Hero-->
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -36,7 +36,6 @@
         </div>
     </section>
 
-    <!-- Content Section (List Pelajaran) -->
     <section id="lessons" class="content">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Cari tau dari mana anda mau memulai!</h2>
@@ -79,7 +78,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!--Footer-->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-col">
@@ -133,24 +132,20 @@
         </div>
     </footer>
 
-    <!-- Script untuk animasi scroll -->
     <script>
-        // Fungsi untuk mendeteksi saat elemen masuk ke viewport
+        // Fungsi
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
                 }
-                // Opsional: Hapus 'show' jika ingin animasi ulang saat scroll keluar-masuk
-                // else {
-                //     entry.target.classList.remove('show');
-                // }
+                
             });
         }, {
-            threshold: 0.1 // Elemen terlihat 10% untuk memicu animasi
+            threshold: 0.1
         });
 
-        // Temukan semua elemen dengan class 'animate-on-scroll'
+        
         const hiddenElements = document.querySelectorAll('.animate-on-scroll');
         hiddenElements.forEach((el) => observer.observe(el));
     </script>
