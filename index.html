@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Coding di Platform Kami</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Progate Learn</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#html-css" class="nav-link">HTML & CSS</a></li>
+                <li class="nav-item"><a href="#javascript" class="nav-link">JavaScript</a></li>
+                <li class="nav-item"><a href="#ruby" class="nav-link">Ruby</a></li>
+                <li class="nav-item"><a href="#php" class="nav-link">PHP</a></li>
+                <li class="nav-item"><a href="#Login" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animate-on-scroll">BELAJAR CODING.</h1>
+            <h1 class="animate-on-scroll">BELAJAR MENJADI LEBIH KREATIF.</h1>
+            <p class="animate-on-scroll">Platform online untuk belajar coding dengan lingkungan pemrograman yang lengkap.</p>
+            <a href="#lessons" class="cta-button animate-on-scroll">Mulai Belajar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Content Section (List Pelajaran) -->
+    <section id="lessons" class="content">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Cari tau dari mana anda mau memulai!</h2>
+            <div class="lessons-grid">
+                
+                <div id="html-css" class="lesson-card animate-on-scroll">
+                    <div class="lesson-icon">
+                        <i class="fa-brands fa-html5 fa-2xl html-icon"></i>
+                        <i class="fa-brands fa-css3-alt fa-2xl css-icon"></i>
+                    </div>
+                    <h3>HTML & CSS</h3>
+                    <p>Bahasa yang digunakan untuk membuat dan mendesain tampilan situs web Anda.</p>
+                </div>
+
+                <div id="javascript" class="lesson-card animate-on-scroll">
+                    <div class="lesson-icon">
+                        <i class="fa-brands fa-js fa-2xl js-icon"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Library JavaScript yang cepat, kaya akan fitur, dan mudah digunakan yang menangani animasi dan permintaan Ajax.</p>
+                </div>
+
+                <div id="ruby" class="lesson-card animate-on-scroll">
+                    <div class="lesson-icon">
+                        <i class="fa-solid fa-gem fa-2xl ruby-icon"></i>
+                    </div>
+                    <h3>Ruby</h3>
+                    <p>Bahasa dinamis, serba guna yang sederhana dan produktif. Ruby sering digunakan untuk membuat aplikasi web yang responsive.</p>
+                </div>
+
+                <div id="php" class="lesson-card animate-on-scroll">
+                    <div class="lesson-icon">
+                       <i class="fa-brands fa-php fa-2xl php-icon"></i>
+                    </div>
+                    <h3>PHP</h3>
+                    <p>Bahasa skrip open source yang dapat disematkan ke dalam HTML, dan cocok untuk pengembangan web.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Tentang Progate</h3>
+                <p>Progate adalah platform online untuk belajar coding. Kami menawarkan lingkungan pemrograman yang lengkap untuk mempermudah Anda memulai.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Pelajaran</h3>
+                <ul>
+                    <li><a href="#html-css">HTML & CSS</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#ruby">Ruby</a></li>
+                    <li><a href="#php">PHP</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Java</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Perusahaan</h3>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Karier</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pers</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Dukungan</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Panduan</a></li>
+                    <li><a href="#">Komunitas</a></li>
+                    <li><a href="#">Lapor Bug</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2023 Progate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script untuk animasi scroll -->
+    <script>
+        // Fungsi untuk mendeteksi saat elemen masuk ke viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+                // Opsional: Hapus 'show' jika ingin animasi ulang saat scroll keluar-masuk
+                // else {
+                //     entry.target.classList.remove('show');
+                // }
+            });
+        }, {
+            threshold: 0.1 // Elemen terlihat 10% untuk memicu animasi
+        });
+
+        // Temukan semua elemen dengan class 'animate-on-scroll'
+        const hiddenElements = document.querySelectorAll('.animate-on-scroll');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
